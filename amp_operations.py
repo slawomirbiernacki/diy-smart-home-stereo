@@ -18,7 +18,7 @@ def sourceAUX():
     runCode('0x856a24')
 
 def runCode(code):
-    output = os.popen('ir-ctl -d /dev/lirc0 -S necx:{}'.format(code)).read()
+    output = os.popen('ir-ctl -d /dev/lirc0 -S necx:{}'.format(code))
     print(output)
 
 

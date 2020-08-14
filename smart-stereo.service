@@ -1,0 +1,13 @@
+[Unit]
+Description=Smart stereo service
+After=multi-user.target
+StartLimitIntervalSec=0
+[Service]
+WorkingDirectory=/home/pi/projects/diy-smart-home-stereo
+User=pi
+RestartSec=1
+Type=simple
+ExecStart=/home/pi/projects/diy-smart-home-stereo/venv/bin/python /home/pi/projects/diy-smart-home-stereo/spocon-websocket-client.py --serve-in-foreground
+Restart=always
+[Install]
+WantedBy=multi-user.target

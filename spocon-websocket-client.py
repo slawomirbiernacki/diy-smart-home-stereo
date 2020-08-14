@@ -1,4 +1,7 @@
 import websocket
+import json
+from amp_operations import *
+
 try:
     import thread
 except ImportError:
@@ -7,6 +10,11 @@ import time
 
 def on_message(ws, message):
     print(message)
+    event = json.loads(message)["event"]
+    if event == "contextChanged":
+        powerOn()
+        time.sleep(3)
+        sourceAUX() 
 
 def on_error(ws, error):
     print(error)
