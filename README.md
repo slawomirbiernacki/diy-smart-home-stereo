@@ -1,7 +1,11 @@
 # diy-smart-home-stereo
 
-This runs on Raspberry 4 - no need for LIRC!
+Set of scripts to smartify your home amplifier. I use raspberry Pi 4 with IR emitter sticked to my TEAC amplifier. 
+Functionality:
+1. Turns on amplifier and selects input source when Spotify outtput device is set to spocon (spotify client for linux, runs on raspberry in my case)
 
+
+# Installation
 1. Install Spocon https://github.com/spocon/spocon
 2. Register service:
 
