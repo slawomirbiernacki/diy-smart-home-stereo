@@ -2,7 +2,7 @@
 
 Set of scripts to smartify your home amplifier. I use raspberry Pi 4 with IR emitter sticked to my TEAC amplifier. 
 Functionality:
-1. Turns on amplifier and selects input source when Spotify outtput device is set to spocon (spotify client for linux, runs on raspberry in my case)
+1. Turns on amplifier and selects input source when Spotify outtput device is set to [spocon](https://github.com/spocon/spocon) (spotify client for raspberry, wrapper on [liberespot-java](https://github.com/librespot-org/librespot-java)).
 
 
 # Installation
