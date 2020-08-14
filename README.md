@@ -12,3 +12,4 @@ This runs on Raspberry 4 - no need for LIRC!
 
 # TODO
 1. Logs
+2. Beter volume control - wider loudness range
