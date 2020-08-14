@@ -16,6 +16,9 @@ def on_message(ws, message):
         time.sleep(3)
         sourceAUX() 
 
+    if event == "inactiveSession":
+        sourceCD()
+
 def on_error(ws, error):
     print(error)
 
