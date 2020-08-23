@@ -1,8 +1,8 @@
 # diy-smart-home-stereo
 
-Set of scripts to smartify your home amplifier. I use raspberry Pi 4 with IR emitter sticked to my TEAC amplifier. 
+Set of scripts to smartify my home amplifier. I use raspberry Pi 4 with IR emitter sticked to my TEAC amplifier. 
 Functionality:
-1. Turns on amplifier and selects input source when Spotify outtput device is set to [spocon](https://github.com/spocon/spocon) (spotify client for raspberry, wrapper on [liberespot-java](https://github.com/librespot-org/librespot-java)).
+1. Turns on amplifier and selects input source when Spotify output device is updated. I use [spocon](https://github.com/spocon/spocon) as a spotify client (wrapper on [liberespot-java](https://github.com/librespot-org/librespot-java)).
 
 
 # Installation
@@ -16,5 +16,4 @@ Functionality:
 
 
 # TODO
-1. Logs
 2. Beter volume control - wider loudness range
