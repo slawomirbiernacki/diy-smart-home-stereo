@@ -20,7 +20,8 @@ def sourceAUX():
 
 def runCode(code):
     necCommand = 'necx:{}'.format(code)
-    result = subprocess.run(["ir-ctl", "-d","/dev/lirc0","-S", necCommand], capture_output=True, check=True)
+    #result = subprocess.run(["ir-ctl", "-d","/dev/lirc0","-S", necCommand], capture_output=True, check=True)
+    result = subprocess.run(['ir-ctl -d /dev/lirc0 -S necx:{}'.format(code)], shell=True,  capture_output=True, check=True)
     print(result)
 
 if __name__ == '__main__':

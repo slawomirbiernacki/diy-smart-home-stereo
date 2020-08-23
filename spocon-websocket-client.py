@@ -14,8 +14,8 @@ def on_message(ws, message):
     #print(event)
     if event == "contextChanged":
         print("Reacting to changed context")
-        powerOn()
-        time.sleep(3)
+        #powerOn()
+        #time.sleep(3)
         sourceAUX() 
 
     if event == "inactiveSession":
