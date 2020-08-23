@@ -1,5 +1,6 @@
 import sys
 import os
+import subprocess
 
 def powerOn():
     print("Powering on amplifier")
@@ -18,9 +19,9 @@ def sourceAUX():
     runCode('0x856a24')
 
 def runCode(code):
-    output = os.popen('ir-ctl -d /dev/lirc0 -S necx:{}'.format(code))
-    print(output)
-
+    necCommand = 'necx:{}'.format(code)
+    result = subprocess.run(["ir-ctl", "-d","/dev/lirc0","-S", necCommand], capture_output=True, check=True)
+    print(result)
 
 if __name__ == '__main__':
     globals()[sys.argv[1]]()
