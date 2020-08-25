@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+ir-ctl -d /dev/lirc0 -S necx:0x856a8c
+
